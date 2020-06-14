@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL Shortener</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../public/css/jquery.mobile-1.5.0-rc1.min.css" />
+    <link rel="stylesheet" href="../public/css/stylesheet.main.css" />
+    
+	<script src="../public/js/jquery-3.2.1.min.js"></script>
+	<script src="../public/js/clipboard.min.js"></script>
+	<script src="../public/js/jquery.mobile-1.5.0-rc1.min.js"></script>
+	<script src="../public/js/script.main.js"></script>
+	<script src="../public/js/prefixfree.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+	<div role="main" class="ui-content">
+        <template class='isb'>
+            <a href="#" tabindex="-1" aria-hidden="false" title="Shorten" class="s ui-corner-all ui-button ui-button-icon-only ui-button-right">
+                Shorten
+                <span class="s-btn ui-icon-arrow-r ui-icon"></span>
+            </a>
+        </template>
+        <!-- <p id="short-url">null</p> -->
+		<div class="content-wrapper">
+            <div class="content">
+                <form class="url-shortener">
+                    <input class="url-input" type="text" data-clear-btn="true" placeholder="URL to shorten e.g. https://host.domain.com/path/to/page">
+                
+                    <div class="process-output">
+                        <p>Shortened URL: <span><em id="short-url">Null</em>
+                        <img class="copy-url" data-clipboard-target="#short-url" src='../public/assets/clippy.svg'/></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+body,.ui-page {
+    background-color: #fff !important;
+}
+p {
+    margin: 0;
+}
+.content-wrapper {
+    width: 100%;
+    height: 117px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 16px;
+}
+.content {
+    box-sizing: border-box;
+    border-top: 1px solid transparent;
+}
+
+.iw-custom {
+    margin: 5px auto 10px;
+    height: 40px !important;
+    line-height: 40px !important;
+    width: 500px;
+    box-sizing: border-box;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.iw-custom .ui-textinput-clear-button {
+    right: 32px !important;
+}
+
+.url-input {
+    height: 40px;
+    line-height: 40px;
+}
+
+.ui-focus {
+    border-width: 0.1px !important;
+    border:  0.1px solid #444 !important;
+    transition: border .5s ease-in-out;
+    text-shadow: none !important;
+}
+
+.ionull {
+    border:  0.1px solid #ec1c1c !important;   
+    transition: border .5s ease-in-out;
+}
+
+.process-output {
+    position: relative;
+    height: 52px;
+    line-height: 40px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.process-output p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 52px;
+    line-height: 40px;
+    padding: 5px 30px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.s {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    margin: 5px;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.process-output img {
+    position: absolute;
+    right: 10px;
+    top: 14.578px;
+    width: 20px;
+    height: 22.844px;
+}
+
+.process-output img:hover {
+    cursor: pointer;
+}
+
+.active {
+    cursor: pointer;
+}
+
+/* #short-url {
+    
+} */
