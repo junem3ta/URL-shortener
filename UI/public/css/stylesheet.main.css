@@ -1,3 +1,5 @@
+@import "../primer-tooltips/index.scss";
+
 body,.ui-page {
     background-color: #fff !important;
 }
@@ -7,10 +9,7 @@ p {
 .content-wrapper {
     width: 100%;
     height: 117px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: calc(calc(calc(100vh - 2em) - 117px) / 2);
     padding: 0 16px;
 }
 .content {
@@ -38,14 +37,14 @@ p {
 }
 
 .ui-focus {
-    border-width: 0.1px !important;
-    border:  0.1px solid #444 !important;
+    border-width: 1px !important;
+    border:  1px solid #444 !important;
     transition: border .5s ease-in-out;
     text-shadow: none !important;
 }
 
 .ionull {
-    border:  0.1px solid #ec1c1c !important;   
+    border:  1px solid #ec1c1c !important;   
     transition: border .5s ease-in-out;
 }
 
