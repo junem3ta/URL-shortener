@@ -1,2 +1,2 @@
 # URL-shortener
-URL Shortener
+URL Shortener Service. Node, MongoDB.
