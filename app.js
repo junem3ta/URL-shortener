@@ -1,5 +1,3 @@
-//config? dotenv(preferable) express mongoose   shortid valid-url, i -D nodemon
-// `npm run dev` to start nodemon
 const express = require('express'),
 PORT = 5000,
 connectDB = require('./config/db'),
