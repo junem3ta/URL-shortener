@@ -2,26 +2,22 @@
 <html>
 <head>
 	<title>URL Shortener</title>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="../public/css/jquery.mobile-1.5.0-rc1.min.css" />
-    <link rel="stylesheet" type="text/x-ss" href="../public/css/stylesheet.main.css" />
-    <link rel="stylesheet" href="../public/css/primer-tooltips.css" />
-    
-	<script src="../public/js/jquery-3.2.1.min.js"></script>
-	<script src="../public/js/clipboard.min.js"></script>
-	<script src="../public/js/jquery.mobile-1.5.0-rc1.min.js"></script>
-	<script src="../public/js/script.main.js"></script>
-	<script src="../public/js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.mobile-1.5.0-rc1.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/primer-tooltips.css" />
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/jquery.mobile-1.5.0-rc1.min.js"></script>
+	<script src="js/script.main.js"></script>
+	<script src="js/prefixfree.min.js"></script>
 </head>
 <body>
-
 <div data-role="page">
-
 	<div role="main" class="ui-content">
         <template class='isb'>
-            <a href="#" tabindex="-1" aria-hidden="false" title="Shorten" class="s ui-corner-all ui-button ui-button-icon-only ui-button-right">
+            <a href="#" tabindex="-1" aria-hidden="false" title="Shorten" 
+            class="s ui-corner-all ui-button ui-button-icon-only ui-button-right">
                 Shorten
                 <span class="s-btn ui-icon-arrow-r ui-icon"></span>
             </a>
@@ -31,19 +27,21 @@
             <div class="content">
                 <form class="url-shortener">
                     <input class="url-input" type="text" data-clear-btn="true" placeholder="URL to shorten e.g. https://host.domain.com/path/to/page">
-                
                     <div class="process-output">
-                        <p>Shortened URL: <span><em id="short-url">Null</em>
-                        <img class="copy-url" data-clipboard-target="#short-url" src='../public/assets/clippy.svg'/></p>
+                        <p>
+                            <span class="p-h" id="short-url">
+                                <!-- https://devcenter.heroku.com/articles/heroku-cli  -->
+                                -- Not Short URLs, yet! --
+                            </span>
+                            <span tabindex="1" data-clipboard-target="#short-url" class="copy-url tooltipped tooltipped-s border p-2 mb-2 mr-2 float-left" aria-label="copied!">
+                                copy
+                            </span>
+                        </p>
                     </div>
                 </form>
             </div>
-            <span class="tooltipped tooltipped-multiline tooltipped-n border p-2" aria-label="This is the tooltip with multiple lines. This is the tooltip with multiple lines.">
-                Tooltip with multiple lines
-            </span>
         </div>
 	</div>
 </div>
-
 </body>
 </html>
